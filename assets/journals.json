@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-12",
+  "scope": "Dated, partial official-source snapshots plus explicitly labelled local recommendations; not submission certification.",
+  "null_semantics": "Not specified or not verified. Never interpret null as no requirement.",
+  "profiles": {
+    "general": {
+      "label": "General stellar-science working figure",
+      "source_urls": [],
+      "checked_on": "2026-11-12",
+      "widths_mm": {"single": null, "double": null},
+      "recommended_width_mm": {"single": 88, "double": 180},
+      "font_family": "serif",
+      "font_size_pt": 8,
+      "min_font_pt": null,
+      "min_line_pt": null,
+      "raster_dpi": {"image": null, "line": null, "combination": null},
+      "recommended_raster_dpi": 600,
+      "supported_formats": ["pdf", "svg", "png", "eps", "tiff"],
+      "status": "provisional",
+      "notes": [
+        "All values in this general profile are local working choices, not a journal specification.",
+        "Vector-first plots, redundant colour/marker/line encodings, explicit uncertainty and units are recommended.",
+        "Custom physical widths are allowed. Inspect the final manuscript at actual size."
+      ]
+    },
+    "aas": {
+      "label": "AAS journals: ApJ, AJ, ApJS and related titles",
+      "source_urls": ["https://journals.aas.org/graphics-guide/", "https://journals.aas.org/aastexguide/", "https://journals.aas.org/aas-style-guide/"],
+      "checked_on": "2026-11-12",
+      "widths_mm": {"single": null, "double": null},
+      "recommended_width_mm": {"single": 88, "double": 180},
+      "font_family": "serif",
+      "font_family_examples": ["Times", "Helvetica", "Symbol"],
+      "font_size_pt": 8,
+      "min_font_pt": 6,
+      "min_line_pt": 0.5,
+      "raster_dpi": {"image": 300, "line": 300, "combination": 300},
+      "raster_min_width_px": 1000,
+      "supported_formats": ["eps", "pdf", "png", "jpg", "tiff"],
+      "single_page_per_figure": true,
+      "status": "official_snapshot",
+      "table_dialect": "aastex",
+      "notes": [
+        "The graphics page does not supply the single/double column widths used here; recommended_width_mm is a local starting point.",
+        "Choose common fonts and retain distinguishable line styles or markers when colours are used.",
+        "An interactive or animated figure also needs a numbered static representation.",
+        "AASTeX 7 prefers deluxetable; long tables need the appropriate long-table markup and machine-readable data."
+      ]
+    },
+    "aa": {
+      "label": "Astronomy & Astrophysics",
+      "source_urls": ["https://www.aanda.org/doc_journal/instructions/aadoc.pdf"],
+      "checked_on": "2026-11-12",
+      "widths_mm": {"single": 88, "double": 180},
+      "intermediate_width_max_mm": 120,
+      "font_family": "serif",
+      "font_size_pt": 8,
+      "min_font_pt": null,
+      "min_line_pt": null,
+      "raster_dpi": {"image": null, "line": null, "combination": null},
+      "supported_formats": ["eps", "pdf", "jpg", "tiff"],
+      "decorative_background_grid": false,
+      "status": "provisional",
+      "table_dialect": "aa",
+      "verification_limits": ["The official PDF's indexed text was inspected; direct PDF retrieval returned HTTP 403. The complete current document and submission portal must be checked before submission."],
+      "notes": [
+        "The indexed official guide gives 88 mm one-column and at most 180 mm full-width figures, with an intermediate 120 mm option.",
+        "Use legible lettering after reduction; no numerical minimum type size, line weight or raster DPI was verified for this snapshot.",
+        "The 8 pt serif setting is a local recommendation, not an A&A numerical rule.",
+        "Avoid background grids or colours unless they convey scientific information. Keep panel labels inside the image."
+      ]
+    },
+    "mnras": {
+      "label": "Monthly Notices of the Royal Astronomical Society",
+      "source_urls": ["https://academic.oup.com/mnras/pages/General_Instructions"],
+      "checked_on": "2026-11-12",
+      "widths_mm": {"single": 84, "double": null},
+      "recommended_width_mm": {"single": 84, "double": 180},
+      "font_family": "serif",
+      "font_family_examples": ["Times", "Arial", "Helvetica"],
+      "font_size_pt": 8,
+      "min_font_pt": null,
+      "min_line_pt": 0.3,
+      "raster_dpi": {"image": 300, "line": null, "combination": 800},
+      "general_bitmap_effective_dpi": 400,
+      "supported_formats": ["eps", "pdf", "tiff"],
+      "spines": "all",
+      "ticks_on_all_sides": true,
+      "single_page_per_figure": true,
+      "status": "official_snapshot",
+      "table_dialect": "mnras",
+      "notes": [
+        "The artwork section cites 84 mm single-column figures and approximately 8 pt lettering; 8 pt is guidance, not a stated strict minimum.",
+        "The TIFF subsection specifies 300 ppi halftone and 800 ppi combination artwork; a separate paragraph says bitmap elements should be at least 400 dpi. Treat image-type-specific requirements explicitly.",
+        "Quantitative plots need borders and ticks on all four sides. Embed common fonts and prefer vector line plots.",
+        "Tables use three horizontal rules, without vertical rules or coloured cells; long online tables need machine-readable data with column descriptions."
+      ]
+    },
+    "nature-astronomy": {
+      "label": "Nature Astronomy",
+      "source_urls": ["https://www.nature.com/natastron/submission-guidelines/aip-and-formatting", "https://www.nature.com/natastron/submission-guidelines/initial-formatting", "https://www.nature.com/natastron/content"],
+      "checked_on": "2026-11-12",
+      "widths_mm": {"single": null, "double": null},
+      "maximum_width_mm": 180,
+      "recommended_width_mm": {"single": 88, "double": 180},
+      "font_family": "sans-serif",
+      "font_size_pt": 6.5,
+      "min_font_pt": 5,
+      "max_standard_font_pt": 7,
+      "min_line_pt": null,
+      "raster_dpi": {"image": 300, "line": 300, "combination": 300},
+      "supported_formats": [],
+      "status": "provisional",
+      "table_dialect": "plain",
+      "verification_limits": ["The official journal-specific page's indexed full text was inspected; direct retrieval redirected to a blocked identity-provider endpoint. Accepted artwork formats and all article-type-specific requirements require a live recheck."],
+      "notes": [
+        "The journal-specific AIP page gives maximum width 180 mm, standard sans-serif lettering 5–7 pt and image panels at least 300 dpi.",
+        "The page does not define single/double column widths; recommended_width_mm is local. Nature main-journal 89/183 mm values are not imported.",
+        "Keep labels and scale/error bars editable; explain uncertainty in captions. Tables belong at the end of the text document; complex data may be separate Excel files.",
+        "An empty supported_formats list means acceptance was not verified, not that no format is accepted. Distinguish initial, final, Extended Data and supplementary requirements."
+      ]
+    }
+  }
+}

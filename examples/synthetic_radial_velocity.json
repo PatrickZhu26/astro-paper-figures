@@ -1,0 +1,22 @@
+{
+  "kind": "radial_velocity",
+  "synthetic": true,
+  "journal": "aas",
+  "width": "double",
+  "height_mm": 110,
+  "caption": "Synthetic tool demonstration only: analytical test values and supplied observation-like perturbations. Error bars are fixed demonstration values, not measured uncertainties. Residual = synthetic observed minus supplied model. This is not an astronomical result.",
+  "units": {"x": "day", "observed": "km/s", "model": "km/s", "sigma": "km/s"},
+  "data": {
+    "x": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    "observed": [0.2, 7.0, 10.3, 7.0, -0.1, -6.9, -10.2, -7.0, 0.1],
+    "model": [0, 7.071067811865, 10, 7.071067811865, 0, -7.071067811865, -10, -7.071067811865, 0],
+    "sigma": [0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4]
+  },
+  "options": {
+    "xlabel": "Test time (day)",
+    "ylabel": "Synthetic RV (km/s)",
+    "residual_ylabel": "O−model (km/s)",
+    "title": "Synthetic radial-velocity demonstration",
+    "uncertainty": "Fixed synthetic demonstration sigma; not inferred from observations"
+  }
+}

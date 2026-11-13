@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "example-journal": {
+      "label": "Illustrative custom profile; not a real journal specification",
+      "source_urls": [],
+      "checked_on": "2026-11-13",
+      "submission_stage": "illustration only; verify for the actual target",
+      "widths_mm": {"single": 88, "double": 180},
+      "font_family": "serif",
+      "font_size_pt": 8,
+      "min_font_pt": 6,
+      "min_line_pt": 0.5,
+      "raster_dpi": {"image": 300, "line": 600, "combination": 600},
+      "supported_formats": ["pdf", "eps", "tiff"],
+      "notes": ["Example values only. Replace using the chosen journal's current official guidance; unknown values may be null."]
+    }
+  }
+}

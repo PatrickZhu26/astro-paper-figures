@@ -1,0 +1,12 @@
+{
+  "synthetic": true,
+  "caption": "Synthetic parameter table demonstration; these values are not fitted stellar parameters.",
+  "label": "tab:synthetic-parameters",
+  "columns": ["parameter", "value", "lower", "upper"],
+  "rows": [
+    ["mass_A", 1.1, 1.0, 1.2],
+    ["mass_B", 0.9, 0.8, 1.0]
+  ],
+  "units": {"value": "solar mass", "lower": "solar mass", "upper": "solar mass"},
+  "notes": "Lower and upper columns are arbitrary demonstration bounds, not confidence or credible intervals."
+}

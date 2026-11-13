@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+.matplotlib-cache/
+.DS_Store
+outputs/
+output/
+*.egg-info/
+.env
+.env.*
